@@ -7,7 +7,7 @@
 
 #define ROW_PORT PORTB
 #define COL_PORT PORTD
-#define DELAY   44
+#define DELAY   4000
 
 
 // ------ Prototypes ------ //
@@ -120,7 +120,5 @@ void toggleRandomLed(uint8_t time)
       _delay_us(20);
       t++;
     }
-    ROW_PORT = 0x00;
-    _delay_us(20);
   }
 }
